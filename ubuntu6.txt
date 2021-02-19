@@ -1,0 +1,34 @@
+
+#Practice - Switch case
+#Author - Rutuja Jain
+
+read -p "enter your name " name
+
+case $name in
+
+"Computer") echo "Code is working"   #if user input Computer this value is printed
+;;
+"machine") echo "Powering Off"
+;;
+"machine_name") echo "ubuntu"
+;;
+
+*) echo "invalid input please  give input Computer or machine or machine_name"
+
+esac
+echo "---"
+
+read -p "enter the character " exp
+
+case $exp in
+  [A-Z])  echo "is an uppercase letter"
+  ;;
+  [a-z])  echo "is an lowecase letter"
+  ;;
+  [0-9]) echo "is a number"
+  ;;
+
+  *)  
+       echo   "invalid expression"
+
+esac
